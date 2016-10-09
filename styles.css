@@ -1,0 +1,25 @@
+
+body {
+	font-family: helvetica;
+	margin: 20px 20px 20px 20px;
+}
+
+#email input:invalid {
+  background: hsla(0, 90%, 70%, 1);
+}
+
+#email input:valid {
+  background: hsla(100, 90%, 70%, 1);
+}
+
+#url input:invalid {
+  background: hsla(0, 90%, 70%, 1);
+}
+
+#url input:valid {
+  background: hsla(100, 90%, 70%, 1);
+}
+
+#comments {
+
+}

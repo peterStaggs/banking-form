@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1> Loan Application </h1>
+		<h2> Henderson's Bank and Trust </h2> 
+	</header>
+	<br>
+	<main>
+		<div>
+			<form>
+	  			First name:<br>
+	  			<input type="text" name="firstname"><br>
+	  			<br>
+	  			Middle Initial:<br>
+	  			<input type="text" name="middleInitial"><br>
+	  			<br>
+	  			Last name:<br>
+	  			<input type="text" name="lastname"><br>
+	  			<br>
+	  			Applicant Address:<br>
+	  			<input type='text' name='applicantAddress'><br>
+	  			<br>
+	  			Applicant Occupation:<br>
+	  			<input type='text' name='applicantOccupation'><br>
+	  			<br>
+				Applicant Employer:<br>
+	  			<input type='text' name='applicantEmployer'><br>
+	  			<br>
+	  			Employer Address:<br> 
+	  			<input type='text' name='employerAddress'><br>
+	  			<br>
+			</form>
+		</div>
+		<div> 
+			<form action="loans"> Loan Type<br>
+				 <input list="loans">
+				 <datalist id="loans">
+				    <option value="Commercial">
+				    <option value="Personal">
+				    <option value="Real Estate">
+				    <option value="Mortgage">
+				 </datalist> 
+			</form>
+		</div>
+		<br>
+		<div>
+		Loan Amount Requested:<br>
+			<textarea name="message" rows="1" cols="10">
+			</textarea>
+		</div>
+		<br>
+		<div>
+			<form>
+				Loan Duration<br>
+  				<input type="radio" name="duration" value="5 years" checked> 5 years<br>
+  				<input type="radio" name="duration" value="10 years"> 10 years<br>
+  				<input type="radio" name="duration" value="15 years"> 15 years
+			</form>
+		</div>
+		<br>
+			<div> 
+			<form action="loans"> Special Conditions <br>
+				 <input list="conditions">
+				 <datalist id="conditions">
+				    <option value="I have a down payment">
+				    <option value="Out of state resident">
+				    <option value="Married">
+				    <option value="Loan will be co-signed">
+				 </datalist> 
+			</form>
+		</div>
+		<br>
+		<div id="comments">
+		Additional Comments:<br>
+			<textarea name="comment" rows="10" cols="50">
+			</textarea>
+		</div>
+		<br>
+		<div>
+			<form>
+	  			<div id= "email">
+	  				Email (required):<br>
+	  				<label for="emailRequired"></label>
+					<input type="email" id="emailRequired" name="emailRequired" required /><br>
+				</div>
+				Applicant's Phone Number<br>
+	  			<input type="text" name="applicantsPhoneNumber"><br>
+	  			Linkedin:<br>
+	  			<div id="url">
+	  				<input type="url" required><br>
+	  			</div>
+	  		</form>
+	  	</div>	
+	  			
+	</main>
+</body>
+</html>
